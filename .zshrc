@@ -52,3 +52,7 @@ export PATH="$PATH:$HOME/.cargo/bin"
 
 # Load deno to path
 export PATH="$PATH:$HOME/.deno/bin"
+
+# Load dir colors
+test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
+
