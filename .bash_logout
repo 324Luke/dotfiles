@@ -1,0 +1,1 @@
+/home/luke/.dotfiles/bash_logout
