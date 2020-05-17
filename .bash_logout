@@ -1,1 +1,3 @@
-/home/luke/.dotfiles/bash_logout
+#
+# ~/.bash_logout
+#
