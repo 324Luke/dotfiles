@@ -48,27 +48,11 @@ source $ZSH/oh-my-zsh.sh
 # Run imwheel to modify mouse scroll speed
 imwheel --kill --buttons "45"
 
-# Load yarn bins to path
-export PATH="$PATH:`yarn global bin`"
-
-# Load rust toolchain to path
-export PATH="$PATH:$HOME/.cargo/bin"
-
-# Load deno to path
-export PATH="$PATH:$HOME/.deno/bin"
-
 # Load dir colors
 test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
-
-# Load pyenv
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 # Start tmux
 tmux new -A -s main
 
 # Source zsh env
 source ~/.zshenv
-
-# load rbenv
-eval "$(rbenv init -)"
