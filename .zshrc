@@ -39,6 +39,7 @@ plugins=(
   ruby
   gem
   tmux
+  history-substring-search
 )
 
 source $ZSH/oh-my-zsh.sh
