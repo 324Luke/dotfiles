@@ -35,6 +35,10 @@ plugins=(
   yarn-autocompletions
   yarn
   rust
+  rbenv
+  ruby
+  gem
+  tmux
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -56,3 +60,15 @@ export PATH="$PATH:$HOME/.deno/bin"
 # Load dir colors
 test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 
+# Load pyenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# Start tmux
+tmux new -A -s main
+
+# Source zsh env
+source ~/.zshenv
+
+# load rbenv
+eval "$(rbenv init -)"
