@@ -28,19 +28,19 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  gem
   git
+  history-substring-search
   nvm
   pyenv
-  zsh-syntax-highlighting
-  yarn-autocompletions
-  yarn
-  rust
   rbenv
   ruby
-  gem
+  rust
   tmux
-  history-substring-search
+  yarn
+  yarn-autocompletions
   zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
