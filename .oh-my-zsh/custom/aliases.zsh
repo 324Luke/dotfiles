@@ -14,8 +14,8 @@ alias czc="git add . && git-cz && git push"
 alias qitignore="git ignore"
 
 # ls
-alias lls="exa -alhG"
-alias ls="exa"
+alias lls="exa -alhG" # LSD doesn't have -G option, fallback to exa
+alias ls="lsd"
 
 # editors
 alias vim="nvim"
