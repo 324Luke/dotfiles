@@ -1,3 +1,5 @@
 [user]
 	name = Luke Whrit
 	email = lukewhrit@gmail.com
+[alias]
+	ignore = "!gi() { curl -sL https://www.gitignore.io/api/$@ ;}; gi"

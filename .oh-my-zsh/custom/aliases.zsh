@@ -11,9 +11,11 @@ alias explorer="xdg-open"
 
 # git
 alias czc="git add . && git-cz && git push"
+alias qitignore="git ignore"
 
 # ls
-alias lls="ls -AlhG"
+alias lls="exa -alhG"
+alias ls="exa"
 
 # editors
 alias vim="nvim"
@@ -40,5 +42,5 @@ alias docker.cleanimage="docker images --filter dangling=true -q | xargs docker 
 alias delete.ds="find . -name '.DS_Store' -type f -print -delete"
 
 # functions
-cll() { ls -AlhG "$@" | awk '{k=0;for(i=0;i<=8;i++)k+=((substr($1,i+2,1)~/[rwx]/)*2^(8-i));if(k)printf(" %0o ",k);print}' | cut -c 1-5,21-; }
+cll() { /usr/bin/ls -alhG "$@" | awk '{k=0;for(i=0;i<=8;i++)k+=((substr($1,i+2,1)~/[rwx]/)*2^(8-i));if(k)printf(" %0o ",k);print}' | cut -c 1-5,21-; }
 up() { unset upvar1; for item in $(seq 1 $1); do upvar1=${upvar1}"../"; done; echo cd $upvar1; cd $upvar1;}
