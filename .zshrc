@@ -48,7 +48,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # Run imwheel to modify mouse scroll speed
-imwheel --kill --buttons "45"
+imwheel --kill --buttons "45" 2>&1 /dev/null
 
 # Load dir colors
 test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)

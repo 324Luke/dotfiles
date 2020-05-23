@@ -3,6 +3,9 @@ alias reload.zsh="source ~/.zshrc"
 alias reload.profile="source ~/.bash_profile"
 alias reload.term="source ~/.bash_profile && source ~/.zshrc"
 
+# mongo
+alias mongod="mongod --dbpath=\"/home/luke/.config/mongo/data/db\""
+
 # cd
 alias ..="cd .."
 
@@ -16,6 +19,9 @@ alias qitignore="git ignore"
 # ls
 alias lls="exa -alhG" # LSD doesn't have -G option, fallback to exa
 alias ls="lsd"
+
+# mkdir
+alias mkdir="/usr/bin/mkdir -p"
 
 # editors
 alias vim="nvim"
