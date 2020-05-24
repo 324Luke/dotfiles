@@ -7,6 +7,7 @@ alias reload.term="source ~/.bash_profile && source ~/.zshrc"
 alias mongod="mongod --dbpath=\"/home/luke/.config/mongo/data/db\""
 
 # cd
+# alias cd="cd $1 && ls"
 alias ..="cd .."
 
 # explorer
