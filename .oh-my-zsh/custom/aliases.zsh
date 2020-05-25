@@ -8,6 +8,8 @@ alias mongod="mongod --dbpath=\"/home/luke/.config/mongo/data/db\""
 
 # screen capture
 alias capt="maim -s | owo -t image/png -n _.png - | xclip -i -selection clipboard"
+alias owsh="capt"
+alias owosh="capt"
 
 # cat
 alias cat="<"
