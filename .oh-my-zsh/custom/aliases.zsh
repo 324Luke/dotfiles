@@ -6,6 +6,12 @@ alias reload.term="source ~/.bash_profile && source ~/.zshrc"
 # mongo
 alias mongod="mongod --dbpath=\"/home/luke/.config/mongo/data/db\""
 
+# screen capture
+alias capt="maim -s | owo -t image/png -n _.png - | xclip -i -selection clipboard"
+
+# cat
+alias cat="<"
+
 # cd
 # alias cd="cd $1 && ls"
 alias ..="cd .."
