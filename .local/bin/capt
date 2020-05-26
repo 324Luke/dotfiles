@@ -1,0 +1,7 @@
+#!/bin/sh
+
+maim -s -u | { 
+  owo -t image/png -n _.png - | xclip -i -selection clipboard
+} || {
+  xclip -selection clipboard -t image/png
+}
