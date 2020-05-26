@@ -14,8 +14,13 @@ alias owosh="capt"
 alias cat="<"
 
 # cd
-# alias cd="cd $1 && ls"
 alias ..="cd .."
+
+# ls on cd
+function chpwd() {
+    emulate -L zsh
+    ls
+}
 
 # explorer
 alias explorer="xdg-open"
