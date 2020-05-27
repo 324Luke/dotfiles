@@ -56,5 +56,10 @@ test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 # Start tmux
 tmux new -A -s main
 
+# Set pfetch info
+export PF_INFO="ascii title os host kernel uptime de pkgs memory"
+
+cat .TODO
+
 # Source zsh env
 source ~/.zshenv
