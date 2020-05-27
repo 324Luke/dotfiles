@@ -28,6 +28,7 @@ alias explorer="xdg-open"
 # git
 alias czc="git add . && git-cz && git push"
 alias qitignore="git ignore"
+alias yac="yadm commit -am \"$(date +%s)\" && yadm push"
 
 # ls
 alias lls="exa -alhG" # LSD doesn't have -G option, fallback to exa
