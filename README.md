@@ -25,6 +25,10 @@ I use [`yadm`](https://yadm.io) to manage these files.
                                Memory: 5830MiB / 32114MiB
 ```
 
+## commits
+
+Every commit since `4ddf955` has it's message be the current UNIX timestamp when `yadm commit` was ran.
+
 ## installation
 
 Install yadm (On Arch, it's `sudo pacman -Syu yadm-git`), then `yadm clone https://github.com/324Luke/dotfiles.git`
