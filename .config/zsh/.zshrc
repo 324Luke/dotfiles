@@ -1,7 +1,7 @@
 ### Shell Setup
 
-tmux new -A -s main
 eval "$(starship init zsh)"
+tmux new -A -s main
 
 test -r "$HOME/.dir_colors" && eval $(dircolors $HOME/.dir_colors)
 
@@ -13,5 +13,5 @@ imwheel --kill --buttons "45" > /dev/null # /dev/null: throw stdout away
 ### User files
 
 source "${XDG_CONFIG_HOME:-$HOME/.config}/aliasrc"
-source "${ZDOTDIR:-$HOME/.config/zsh"}/plugins.zsh"
-source "${ZDOTDIR:-$HOME/.config/zsh"}/loader.zsh"
+source "${ZDOTDIR:-$HOME/.config/zsh}/plugins.zsh"
+source "${ZDOTDIR:-$HOME/.config/zsh}/loader.zsh"
