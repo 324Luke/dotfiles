@@ -1,0 +1,56 @@
+#!/bin/bash
+
+# source reload
+alias \
+  reload.zsh='source $ZDOTDIR/.zshrc' \
+  reload.profile="source ~/.bash_profile" \
+  reload.term="source ~/.bash_profile && source ~/.zshrc"
+
+# speed
+alias \
+  cat="<" \
+  du="dust" \
+  grep="rg"
+
+# files
+alias \
+  ..="cd .." \
+  explorer="xdg-open" \
+  explore="xdg-open ." \
+  sizeof="du -h" \
+  duh="du -h" \
+  ls="lsd"
+
+# Common Options
+alias \
+  mkdir="/usr/bin/mkdir -p" \
+  mongod="mongod --dbpath=\"/home/luke/.config/mongo/data/db\"" \
+
+# git
+alias \
+  czc="git add . && git-cz && git push" \
+  yac="yadm commit -am "$(date +%s)" && yadm push"
+
+# editors
+alias \
+  vim="nvim" \
+  nv="nvim" \
+  code="codium"
+
+# misc
+alias \
+  "ip?"="curl icanhazip.com"
+
+# functions
+chpwd() { # run ls after changing directory
+  emulate -L zsh
+  ls
+}
+
+tarr () { # common 
+  /usr/bin/tar -pczf "$1" "$2"
+}
+
+untarr () {
+  /usr/bin/tar -pxzf "$1"
+}
