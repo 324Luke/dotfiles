@@ -1,8 +1,11 @@
-# 🐻 dotfiles
+# 🍙 dotfiles
 
 Welcome to my `$HOME`, please come in.
 
-I use [`yadm`](https://yadm.io) to manage these files.
+* You'll find the license these files are under (The GPL-3.0) in the `.github/` directory.
+* Configurations for:
+  * Alacritty
+  * Tmux
 
 ```sh
 ~
@@ -25,17 +28,31 @@ I use [`yadm`](https://yadm.io) to manage these files.
                                Memory: 5830MiB / 32114MiB
 ```
 
-## pre-requisites
-
-* ZSH is **required**. not fish, not bash, zsh.
-
-## commits
-
-Every commit since `4ddf955` has it's message be the current UNIX timestamp when `yadm commit` was ran.
-
 ## installation
 
-Install yadm (On Arch, it's `sudo pacman -Syu yadm-git`), then `yadm clone https://github.com/324Luke/dotfiles.git`
+* Install yadm
+  * With arch it's `sudo pacman -Syu yadm`
+* Clone these dotfiles
+  * `yadm clone https://github.com/324Luke/dotfiles.git`
+* Profit
+
+### editor settings
+
+I currently use VS Code which doesn't make use of a dot file for configuration.
+
+Instead of a dot file I use Shan Khan's Setting Sync plugin.
+
+So to get my configurations follow these instructions:
+
+  1. Create a copy of my [settings gist](https://gist.github.com/324Luke/39fde10578be53782788aeccea116f55).
+  2. Install the extension via this [url](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync).
+  3. Restart VS Code
+  4. You should see a screen with an option to "Login with Github"
+     1. After clicking this a window should open in your browser. Follow the instructions until you see a confirmation.
+  5. If you copied the gist correctly a menu will open with a list of gists will appear, select the one containing my settings.
+
+**NOTE:** I actually use Codium which is FOSS builds of VS Code, I recommend it over the standard VS Code. You can find instructions to install it [here, on its website](https://vscodium.com/).
+
 
 ### note about `.dir_colors`
 
