@@ -63,14 +63,14 @@ window:
   #startup_mode: Windowed
 
   # Window title
-  title: Alacritty Terminal
+  title: zsh // starship.rs
 
   # Window class (Linux/BSD only):
-  #class:
+  class:
     # Application instance name
-    #instance: Alacritty
+    instance: Alacritty // zsh // starship.rs
     # General application class
-    #general: Alacritty
+    general: Alacritty // zsh // starship.rs
 
   # GTK theme variant (Linux/BSD only)
   #
@@ -92,10 +92,10 @@ font:
   # Normal (roman) font face
   normal:
     # Font family
-    family: Jet Brains Mono
+    family: Source Code Pro
 
     # The `style` can be specified to pick a specific face.
-    style: Bold
+    style: Semibold
 
   # Bold font face
   bold:
@@ -103,7 +103,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Jet Brains Mono
+    family: Source Code Pro
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -114,10 +114,10 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Jet Brains Mono
+    family: Source Code Pro
 
     # The `style` can be specified to pick a specific face.
-    style: Italic
+    style: Semibold Italic
 
   # Bold italic font face
   bold_italic:
@@ -125,7 +125,7 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Jet Brains Mono
+    family: Source Code Pro
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
