@@ -15,3 +15,7 @@ imwheel --kill --buttons "45" > /dev/null # /dev/null: throw stdout away
 source "${XDG_CONFIG_HOME:-$HOME/.config}/aliasrc"
 source "${ZDOTDIR:-$HOME/.config/zsh}/plugins.zsh"
 source "${ZDOTDIR:-$HOME/.config/zsh}/loader.zsh"
+
+### URL Quote Magic
+autoload -U url-quote-magic
+zle -N self-insert url-quote-magic
