@@ -5,15 +5,15 @@ tmux new -A -s main
 
 test -r "$HOME/.dir_colors" && eval $(dircolors $HOME/.dir_colors)
 
-### User Configuration
+imwheel --kill --buttons "45"
 
-# Spawn imwheel to fix scroll speed
-imwheel --kill --buttons "45" > /dev/null # /dev/null: throw stdout away
+### User files & Plugins
 
-### User files
+source "${ZDOTDIR:-$HOME/.config/zsh}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "${ZDOTDIR:-$HOME/.config/zsh}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "${ZDOTDIR:-$HOME/.config/zsh}/plugins/yarn-autocompletions/yarn-autocompletions.plugin.zsh"
 
 source "${XDG_CONFIG_HOME:-$HOME/.config}/aliasrc"
-source "${ZDOTDIR:-$HOME/.config/zsh}/plugins.zsh"
 source "${ZDOTDIR:-$HOME/.config/zsh}/loader.zsh"
 
 ### URL Quote Magic
