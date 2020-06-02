@@ -16,6 +16,9 @@ source "${ZDOTDIR:-$HOME/.config/zsh}/plugins/yarn-autocompletions/yarn-autocomp
 source "${XDG_CONFIG_HOME:-$HOME/.config}/aliasrc"
 source "${ZDOTDIR:-$HOME/.config/zsh}/loader.zsh"
 
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 ### URL Quote Magic
 autoload -U url-quote-magic
 zle -N self-insert url-quote-magic

@@ -2,6 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$PATH:`yarn global bin`"
+export GOPATH="$HOME/code/go"
 
 export TERM="alacritty"
 export EDITOR="codium"
