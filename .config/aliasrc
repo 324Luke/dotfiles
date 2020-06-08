@@ -43,9 +43,15 @@ alias \
   nv="nvim" \
   code="codium"
 
+# safety
+alias \
+  mv="mv -i" \
+  rm="rm -i"
+
 # misc
 alias \
-  "ip?"="curl icanhazip.com"
+  "ip?"="curl icanhazip.com" \
+  gs="git status"
 
 # functions
 chpwd() { # run ls after changing directory
@@ -54,9 +60,9 @@ chpwd() { # run ls after changing directory
 }
 
 tarr () { # common 
-  /usr/bin/tar -pczf "$1" "$2"
+  tar -pczf "$1" "$2"
 }
 
 untarr () {
-  /usr/bin/tar -pxzf "$1"
+  tar -pxzf "$1"
 }
