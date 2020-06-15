@@ -35,7 +35,8 @@ alias \
 # git
 alias \
   czc="git add . && git-cz && git push" \
-  yac="yadm commit -am "$(date +%s)" && yadm push"
+  yac="yadm commit -am "$(date +%s)" && yadm push" \
+  czi="commitizen init cz-conventional-changelog --yarn --dev --exact"
 
 # editors
 alias \

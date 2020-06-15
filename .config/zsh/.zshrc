@@ -20,3 +20,4 @@ source "${ZDOTDIR:-$HOME/.config/zsh}/loader.zsh"
 
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+export PATH="$HOME/.rbenv/bin:$PATH"
