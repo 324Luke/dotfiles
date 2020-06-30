@@ -1,0 +1,10 @@
+#!/bin/bash
+
+JSON="$*"
+
+if [ ! "$JSON" ]; then
+    while read -r line; do JSON="$JSON$line"; done
+    echo
+fi
+
+echo "$JSON" | node -e "process.stdin.on('readable', () => {var chunk = process.stdin.read(); chunk !== null && console.log(JSON.stringify(JSON.parse(chunk.toString()), null, 4))});"
