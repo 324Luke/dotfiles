@@ -4,6 +4,12 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$PATH:`yarn global bin`"
 export PATH="$HOME/.deno/bin:$PATH"
 
+# Playerctl Setup
+export LD_LIBRARY_PATH="$DESTDIR/${PREFIX}/lib/:$LD_LIBRARY_PATH"
+export GI_TYPELIB_PATH="$DESTDIR/${PREFIX}/lib/:$GI_TYPELIB_PATH"
+export PATH="$DESTDIR/${PREFIX}/bin:$PATH"
+
+
 # Golang Path Setup
 export GOPATH="$HOME/code/go"
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
