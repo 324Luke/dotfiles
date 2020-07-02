@@ -11,6 +11,7 @@ Welcome to my `$HOME`, please come in.
   * ZSH
   * Git
   * Starship
+  * Spotify via `spicetify-cli`
 
 ```sh
 ~
