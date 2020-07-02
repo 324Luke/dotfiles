@@ -4,3 +4,6 @@
 [submodule ".tmux/plugins/nord-tmux"]
 	path = .tmux/plugins/nord-tmux
 	url = https://github.com/arcticicestudio/nord-tmux.git
+[submodule ".tmux/plugins/tmux-sensible"]
+	path = .tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible.git
