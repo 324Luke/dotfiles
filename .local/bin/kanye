@@ -1,16 +1,18 @@
 #!/bin/sh
 
-# @author Luke Whrit <lukewhrit@gmail.com> (https://github.com/lukewhrit)
-# @description When called, returns a Kanye West quote via https://kanye.rest.
-# @requires curl, jq, tr
+# Author:        Luke Whrit <lukewhrit@gmail.com> (https://github.com/lukewhrit)
+# Description:   When called, returns a Kanye West quote via https://kanye.rest.
+# Requiremennts: curl, jq, tr
 
-# 1. Uses cURL to make a request to kanye.rest
-# 2. Trims the response down to just the `quote`.
-# 3. Removes any double-quotes in the response.
 make_request () {
-  # I could just use ?format=text here and make this program a lot simpler. However, that causes a weird line-ending character on my system.
-  # That character is a "%" with a white background. If you think you know what's causing that let me know. (I use ZSH)
   curl api.kanye.rest -s | jq '.quote' | tr -d '"'
+}
+
+pad_request () {
+  cat <<eof
+    "$(make_request)"
+            -- Kanye West 🌊
+eof
 }
 
 log_version () {
