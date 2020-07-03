@@ -10,3 +10,6 @@
 [submodule ".tmux/plugins/tpm"]
 	path = .tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
+[submodule ".config/spicetify/CustomApps/genius"]
+	path = .config/spicetify/CustomApps/genius
+	url = https://github.com/khanhas/genius-spicetify
