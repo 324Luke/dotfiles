@@ -3,6 +3,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$PATH:`yarn global bin`"
 export PATH="$HOME/.deno/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
 
 # Playerctl Setup
 export LD_LIBRARY_PATH="$DESTDIR/${PREFIX}/lib/:$LD_LIBRARY_PATH"

@@ -3,6 +3,8 @@
 eval "$(starship init zsh)"
 tmux new -A -s main
 
+echo "$(kanye -p)"
+
 test -r "$HOME/.dir_colors" && eval $(dircolors $HOME/.dir_colors)
 
 imwheel --kill --buttons "45"
@@ -20,4 +22,3 @@ source "${ZDOTDIR:-$HOME/.config/zsh}/loader.zsh"
 
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-export PATH="$HOME/.rbenv/bin:$PATH"
