@@ -1,13 +1,13 @@
 ### Shell Setup
 
 eval "$(starship init zsh)"
-tmux new -A -s main
+tmux new -A -s main > /dev/null 2>&1
 
 echo "$(kanye -p)"
 
 test -r "$HOME/.dir_colors" && eval $(dircolors $HOME/.dir_colors)
 
-imwheel --kill --buttons "45"
+imwheel --kill --buttons "45" > /dev/null 2>&1
 
 ### User files & Plugins
 

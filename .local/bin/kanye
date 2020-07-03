@@ -36,9 +36,11 @@ eof
 
 while getopts 'phv' flag; do
   case "${flag}" in
-    p) pad_request  ;;
-    v) log_version  ;;
-    h) print_usage  ;;
-    *) make_request ;;
+    p) pad_request ;;
+    v) log_version ;;
+    h) print_usage ;;
+    *) exit 1      ;;
   esac
 done
+
+echo "$(make_request)"
