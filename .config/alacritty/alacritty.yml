@@ -4,12 +4,6 @@
 # environment variables. Some entries may override variables
 # set by alacritty itself.
 env:
-  # TERM variable
-  #
-  # This value is used to set the `$TERM` environment variable for
-  # each instance of Alacritty. If it is not present, alacritty will
-  # check the local terminfo database and use `alacritty` if it is
-  # available, otherwise `xterm-256color` is used.
   TERM: xterm-256color
 
 window:
@@ -40,26 +34,6 @@ window:
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
 
-  # Window decorations
-  #
-  # Values for `decorations`:
-  #     - full: Borders and title bar
-  #     - none: Neither borders nor title bar
-  #
-  # Values for `decorations` (macOS only):
-  #     - transparent: Title bar, transparent background and title bar buttons
-  #     - buttonless: Title bar, transparent background, but no title bar buttons
-  # decorations: full
-
-  # Startup Mode (changes require restart)
-  #
-  # Values for `startup_mode`:
-  #   - Windowed
-  #   - Maximized
-  #   - Fullscreen
-  #
-  # Values for `startup_mode` (macOS only):
-  #   - SimpleFullscreen5
   title: zsh // starship.rs
 
   # Window class (Linux/BSD only):
@@ -239,13 +213,6 @@ cursor:
   #   - | Beam
   style: Underline
 
-  # If this is `true`, the cursor will be rendered as a hollow box when the
-  # window is not focused.
-  #unfocused_hollow: true
-
-# Live config reload (changes require restart)
-#live_config_reload: true
-
 # Shell
 #
 # You can set `shell.program` to the path of your favorite shell, e.g. `/bin/fish`.
@@ -259,25 +226,6 @@ cursor:
 #  program: /bin/bash
 #  args:
 #    - --login
-
-# Startup directory
-#
-# Directory the shell is started in. If this is unset, or `None`, the working
-# directory of the parent process will be used.
-#working_directory: None
-
-# WinPTY backend (Windows only)
-#
-# Alacritty defaults to using the newer ConPTY backend if it is available,
-# since it resolves a lot of bugs and is quite a bit faster. If it is not
-# available, the the WinPTY backend will be used instead.
-#
-# Setting this option to `true` makes Alacritty use the legacy WinPTY backend,
-# even if the ConPTY backend is available.
-#winpty_backend: false
-
-# Send ESC (\x1b) before characters when alt is pressed.
-#alt_send_esc: true
 
 mouse:
   # Click settings
