@@ -1,8 +1,6 @@
 ## Plugins
 
-source "${ZDOTDIR:-$HOME/.config/zsh}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-source "${ZDOTDIR:-$HOME/.config/zsh}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
-source "${ZDOTDIR:-$HOME/.config/zsh}/plugins/yarn-autocompletions/yarn-autocompletions.plugin.zsh"
+source "${ZDOTDIR:-$HOME/.config/zsh}/plugins.sh"
 
 ## LS Colors
 
