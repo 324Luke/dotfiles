@@ -13,3 +13,6 @@
 [submodule ".config/spicetify/CustomApps/genius"]
 	path = .config/spicetify/CustomApps/genius
 	url = https://github.com/khanhas/genius-spicetify
+[submodule ".config/zsh/plugins/zsh-completions"]
+	path = .config/zsh/plugins/zsh-completions
+	url = git://github.com/zsh-users/zsh-completions.git

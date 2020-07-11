@@ -10,7 +10,7 @@ test -r "$HOME/.dir_colors" && eval $(dircolors $HOME/.dir_colors)
 
 ## Completions
 
-fpath=(${ZDOTDIR:-$HOME/.config/zsh}/zsh-completions/src $fpath)
+fpath=(${ZDOTDIR:-$HOME/.config/zsh}/plugins/zsh-completions/src $fpath)
 
 ## NVM
 
