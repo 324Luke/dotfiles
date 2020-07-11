@@ -10,7 +10,9 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.deno/bin:$PATH"
 
 # Node Setup
-export N_PREFIX="$HOME/.n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin" 
+export N_PREFIX="$HOME/.n"
+[[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin" 
+
 export PATH="$PATH:`yarn global bin`"
 export PATH="$HOME/.esvu/bin:$PATH"
 
