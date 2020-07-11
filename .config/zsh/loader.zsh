@@ -10,10 +10,6 @@ test -r "$HOME/.dir_colors" && eval $(dircolors $HOME/.dir_colors)
 
 fpath=(${ZDOTDIR:-$HOME/.config/zsh}/plugins/zsh-completions/src $fpath)
 
-## n
-
-export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"
-
 ## RBenv
 
 eval "$(rbenv init -)"
