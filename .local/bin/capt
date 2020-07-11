@@ -1,10 +1,10 @@
 #!/bin/sh
 
-maim -s -u | { 
-  owo -b -t image/png -n _.png - | xclip -i -selection clipboard
-} || {
-  xclip -selection clipboard -t image/png
-}
+#maim -s -u | { 
+#  owo -b -t image/png -n _.png - | xclip -i -selection clipboard
+#} || {
+#  xclip -selection clipboard -t image/png
+#}
 
 # Just copy to clipboard
-# maim -s -u | xclip -selection clipboard -t image/png
+maim -s -u | xclip -selection clipboard -t image/png
