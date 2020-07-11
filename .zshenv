@@ -1,28 +1,31 @@
-# Paths
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Cargo Path Setup
 export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$PATH:`yarn global bin`"
-export PATH="$HOME/.deno/bin:$PATH"
-export PATH="$HOME/.esvu/bin:$PATH"
+
+# Ruby Path Setup
 export PATH="$HOME/.rbenv/bin:$PATH"
 
-# Playerctl Setup
-export LD_LIBRARY_PATH="$DESTDIR/${PREFIX}/lib/:$LD_LIBRARY_PATH"
-export GI_TYPELIB_PATH="$DESTDIR/${PREFIX}/lib/:$GI_TYPELIB_PATH"
-export PATH="$DESTDIR/${PREFIX}/bin:$PATH"
+# Deno Setup
+export PATH="$HOME/.deno/bin:$PATH"
 
+# Node Setup
+export N_PREFIX="$HOME/.n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin" 
+export PATH="$PATH:`yarn global bin`"
+export PATH="$HOME/.esvu/bin:$PATH"
 
 # Golang Path Setup
 export GOPATH="$HOME/code/go"
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export PATH=$PATH:/home/luke/code/go/bin
 
+# Programs
 export TERM="alacritty"
 export EDITOR="codium"
 export PAGER="less"
 export BROWSER="brave"
 
-# pfetch
+# Pfetch Settings
 export PF_INFO="ascii title os host kernel uptime de pkgs memory"
 
 # ~/ Clean-up:
