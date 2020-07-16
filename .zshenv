@@ -9,6 +9,9 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 # Deno Setup
 export PATH="$HOME/.deno/bin:$PATH"
 
+# Emacs
+export PATH="$HOME/.emacs.d/bin:$PATH"
+
 # Node Setup
 export N_PREFIX="$HOME/.n"
 [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin" 
