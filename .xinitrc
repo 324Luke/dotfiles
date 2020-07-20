@@ -32,7 +32,7 @@ fi
 # start some nice programs
 
 # allows customizing of mouse scroll speed
-imwheel --kill --buttons "45" > /dev/null 2>&1
+imwheel --kill --buttons "45"
 
 if [ -d /etc/X11/xinit/xinitrc.d ] ; then
     for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
@@ -41,8 +41,9 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
     unset f
 fi
 
-get_session(){
+get_session() {
     local dbus_args=(--sh-syntax --exit-with-session)
+    
     case $1 in
         awesome) dbus_args+=(awesome) ;;
         bspwm) dbus_args+=(bspwm-session) ;;

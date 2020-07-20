@@ -32,7 +32,7 @@ Welcome to my `$HOME`, please come in.
 
 ### Editor
 
-My current editor is VS Codium. It doesn't support configuration via file, so instead I use Shan Khan's Settings Sync extension.
+My current editor is VS Codium (Not Emacs, Emacs is just tracked via this repo). It doesn't support configuration via file, so instead I use Shan Khan's Settings Sync extension.
 
 So to get my configurations follow these instructions:
   1. Create a copy of my [settings gist](https://gist.github.com/324Luke/39fde10578be53782788aeccea116f55).
@@ -41,3 +41,4 @@ So to get my configurations follow these instructions:
   4. You should see a screen with an option to "Login with Github"
      1. After clicking this a window should open in your browser. Follow the instructions until you see a confirmation.
   5. If you copied the gist correctly a menu will open with a list of gists will appear, select the one containing my settings.
+
