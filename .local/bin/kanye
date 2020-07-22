@@ -18,7 +18,7 @@ eof
 }
 
 log_version () {
-  echo 'kanye.sh 0.1.0'
+  echo 'kanye.sh 1.0.0'
 }
 
 print_usage () {
