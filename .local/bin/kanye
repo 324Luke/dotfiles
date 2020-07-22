@@ -2,14 +2,10 @@
 
 # Author:        Luke Whrit <lukewhrit@gmail.com> (https://github.com/lukewhrit)
 # Description:   When called, returns a Kanye West quote via https://kanye.rest.
-# Requiremennts: curl, jq
+# Requiremennts: curl
 
 make_request () {
-  curl api.kanye.rest -s | jq '.quote' -r
-}
-
-print_quote () {
-  echo "$(make_request)"
+  curl "api.kanye.rest?format=text" -s
 }
 
 pad_request () {
@@ -17,6 +13,7 @@ pad_request () {
 
     "$(make_request)"
             -- Kanye West 🌊
+
 eof
 }
 
@@ -26,26 +23,29 @@ log_version () {
 
 print_usage () {
   cat <<eof
-  usage: kanye [-hvpq]
+  usage: kanye [-hvp]
 
   flags:
-    -q: Print a kanye west quote.
-    -p: Dictates whether the quote will be padded
-    -h: Prints program usage information
-    -v: Prints program version
+    -p: Dictates whether the quote will be padded.
+    -h: Prints program usage information.
+    -v: Prints program version.
 
-  Created by Luke Whrit <lukewhrit@gmail.com>.
+  Created by Luke Whrit <lukewhrit@gmail.com>, Powered by https://kanye.rest.
 
   🌊 stay wavy
 eof
 }
+
+if [ "$#" -eq 0 ]; then
+  printf '%s \n' "$(make_request)"
+  exit 1
+fi
 
 while getopts 'hvpq' flag; do
   case "${flag}" in
     p) pad_request ;;
     v) log_version ;;
     h) print_usage ;;
-    q) print_quote ;;
     *) exit 1      ;;
   esac
 done
