@@ -1,6 +1,6 @@
 [submodule ".config/spicetify/Themes"]
 	path = .config/spicetify/Themes
-	url = https://github.com/morpheusthewhite/spicetify-themes.git
+	url = git@github.com:lukewhrit/spicetify-themes.git
 [submodule ".tmux/plugins/nord-tmux"]
 	path = .tmux/plugins/nord-tmux
 	url = https://github.com/arcticicestudio/nord-tmux.git
