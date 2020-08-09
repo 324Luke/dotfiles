@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 
 process.stdin.on('readable', () => {
-    var chunk = process.stdin.read();
+    const chunk = process.stdin.read()
 
     if (chunk !== null) {
-        console.log(JSON.stringify(JSON.parse(chunk.toString()), null, 4))
-    } 
+        console.log(JSON.parse(chunk.toString()))
+    } else {
+        console.log("STDIN is empty.")
+    }
 })
