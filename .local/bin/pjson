@@ -5,7 +5,5 @@ process.stdin.on('readable', () => {
 
     if (chunk !== null) {
         console.log(JSON.parse(chunk.toString()))
-    } else {
-        console.log('STDIN is empty.')
     }
 })
