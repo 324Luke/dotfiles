@@ -27,6 +27,7 @@ truncate_to_repo = false
 style = "bold fg:#94bdff"
 
 [git_status]
+# avit prompt icons:
 # dirty      = " ✗"
 # clean      = " ✔"
 # added      = "✚ "
