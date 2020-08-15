@@ -20,9 +20,6 @@ prompt_order = [
 symbol = "▶"
 style_success = "white"
 
-[line_break]
-disabled = false
-
 [directory]
 disabled = false
 prefix = ""
@@ -30,10 +27,21 @@ truncate_to_repo = false
 style = "bold fg:#94bdff"
 
 [git_status]
-prefix = "("
-suffix = ") "
-modified = " !"
-untracked = "?"
+# dirty      = " ✗"
+# clean      = " ✔"
+# added      = "✚ "
+# modified   = "⚑ "
+# deleted    = "✖ "
+# renamed    = "▴ "
+# unmerged   = "§ "
+# untracked  = "◒ "
+prefix = ""
+suffix = " "
+modified = "⚑"
+untracked = " ◒"
+deleted = "✖ "
+renamed = "▴ "
+style = "bold fg:#94bdff"
 
 [git_branch]
 style = "bold green"
