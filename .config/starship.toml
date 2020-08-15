@@ -1,3 +1,9 @@
+# Port of Oh My Zsh theme "avit" to Starship.
+# ======
+# 
+# Supports: Java, Node.JS, PHP, Python, Ruby, and Rust modules
+# Other modules include: Directory, Git Branch/Commit/State/Status, and Docker
+
 add_newline = false
 prompt_order = [
   "directory",
@@ -5,13 +11,16 @@ prompt_order = [
   "git_commit",
   "git_state",
   "git_status",
+  "docker",
+  "crystal",
   "golang",
-  "nodejs",
+  "haskell",
   "java",
+  "nodejs",
+  "php",
   "python",
   "ruby",
   "rust",
-  "crystal",
   "line_break",
   "character"
 ]
@@ -31,11 +40,7 @@ style = "bold fg:#94bdff"
 # dirty      = " ✗"
 # clean      = " ✔"
 # added      = "✚ "
-# modified   = "⚑ "
-# deleted    = "✖ "
-# renamed    = "▴ "
 # unmerged   = "§ "
-# untracked  = "◒ "
 prefix = ""
 suffix = " "
 modified = "⚑"
@@ -49,17 +54,35 @@ style = "bold green"
 prefix = ""
 
 # Language Support
-[golang]
-symbol = "🐭 "
-style = "bold cyan"
-
-[ruby]
-symbol = "🦀 "
-style = "bold red"
-
-[java]
-symbol = "🌟 "
-style = "bold yellow"
+[docker]
+symbol = " "
 
 [crystal]
 style = "bold blue"
+
+[golang]
+symbol = " "
+style = "bold cyan"
+
+[haskell]
+symbol = " "
+
+[java]
+symbol = " "
+style = "bold yellow"
+
+[nodejs]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "
+style = "bold red"
+
+[rust]
+symbol = " "
