@@ -37,10 +37,10 @@ style = "bold fg:#94bdff"
 
 [git_status]
 # avit prompt icons:
-# dirty      = " ✗"
-# clean      = " ✔"
-# added      = "✚ "
-# unmerged   = "§ "
+# dirty    = " ✗"
+# clean    = " ✔"
+# added    = "✚ "
+# unmerged = "§ "
 prefix = ""
 suffix = " "
 modified = "⚑"
