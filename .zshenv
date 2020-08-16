@@ -1,16 +1,13 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Cargo Path Setup
 export PATH="$HOME/.cargo/bin:$PATH"
-
-# Ruby Path Setup
 export PATH="$HOME/.rbenv/bin:$PATH"
-
-# Deno Setup
 export PATH="$HOME/.deno/bin:$PATH"
-
-# Emacs
+export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/.emacs.d/bin:$PATH"
+
+# Polybar
+export MONITOR=DisplayPort-3
 
 # Node Setup
 export N_PREFIX="$HOME/.n"

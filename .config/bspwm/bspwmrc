@@ -1,6 +1,8 @@
 #!/bin/sh
 
 sxhkd &
+feh --bg-scale pics/Wallpapers/wallpaper.jpg
+picom &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 

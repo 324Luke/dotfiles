@@ -11,7 +11,7 @@ prompt_order = [
   "git_commit",
   "git_state",
   "git_status",
-  "docker",
+  "docker_context",
   "crystal",
   "golang",
   "haskell",
@@ -54,8 +54,10 @@ style = "bold green"
 prefix = ""
 
 # Language Support
-[docker]
+[docker_context]
 symbol = " "
+disabled = false
+style = "bold cyan"
 
 [crystal]
 style = "bold blue"
@@ -66,6 +68,8 @@ style = "bold cyan"
 
 [haskell]
 symbol = " "
+style = "bold purple"
+disabled = false
 
 [java]
 symbol = " "
@@ -73,12 +77,16 @@ style = "bold yellow"
 
 [nodejs]
 symbol = " "
+style = "bold green"
 
 [php]
 symbol = " "
+style = "bold cyan"
+disabled = false
 
 [python]
 symbol = " "
+style = "bold blue"
 
 [ruby]
 symbol = " "
@@ -86,3 +94,4 @@ style = "bold red"
 
 [rust]
 symbol = " "
+style = "bold red"

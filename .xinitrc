@@ -8,7 +8,7 @@ user_resources   = $HOME/.Xresources
 user_modmap      = $HOME/.Xmodmap
 sys_resources    = /etc/X11/xinit/.Xresources
 sys_modmap       = /etc/X11/xinit/.Xmodmap
-DEFAULT_SESSION = startkde
+DEFAULT_SESSION  = bspwm
 
 # merge in defaults and keymaps
 if [ -f $sys_resources ]; then
