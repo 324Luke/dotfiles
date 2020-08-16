@@ -1,7 +1,7 @@
 #!/bin/sh
 
 sxhkd &
-./autorun.sh 
+# ./autorun.sh 
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
