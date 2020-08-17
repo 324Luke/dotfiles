@@ -7,7 +7,7 @@ export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/.emacs.d/bin:$PATH"
 
 # Polybar
-export MONITOR=DisplayPort-3
+export MONITOR=DisplayPort-2
 
 # Node Setup
 export N_PREFIX="$HOME/.n"

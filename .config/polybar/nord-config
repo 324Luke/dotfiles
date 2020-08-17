@@ -8,7 +8,7 @@ width = 98.9%
 height = 2.5%
 offset-x = 20
 offset-y = 20
-radius = 5.0
+radius = 0.0
 
 fixed-center = true
 override-redirect = false

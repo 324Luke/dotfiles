@@ -112,9 +112,9 @@ type = internal/date
 interval = 1.0
 ; See "http://en.cppreference.com/w/cpp/io/manip/put_time" for details on how to format the date string
 ; NOTE: if you want to use syntax tags here you need to use %%{...}
-date = %H:%M
+date = %I:%M %p
 
-date-alt = %Y-%m-%d %a
+date-alt = %m/%d/%Y
 
 format = <label>
 label =  %date%
