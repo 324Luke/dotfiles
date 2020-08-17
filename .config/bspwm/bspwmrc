@@ -3,7 +3,7 @@
 # Program autostrat
 sxhkd &
 picom &
-iimwheel --kill --butons "45" &
+imwheel --kill --butons "45"
 start-pulse-audiox11 &
 
 feh --bg-fill ~/pics/Wallpapers/wallpaper.jpg
