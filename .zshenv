@@ -28,7 +28,7 @@ export PAGER="less"
 export BROWSER="brave"
 
 # Pfetch Settings
-export PF_INFO="ascii title os host kernel uptime de pkgs memory"
+export PF_INFO="ascii title os host kernel uptime wm pkgs memory"
 
 # ~/ Clean-up:
 export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/.config}/zsh"

@@ -16,8 +16,8 @@ eval "$(rbenv init -)"
 
 ## Pyenv
 
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 ## Other
 
