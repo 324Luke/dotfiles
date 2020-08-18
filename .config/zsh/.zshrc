@@ -1,10 +1,10 @@
 ## Shell Startup
 
-## Start starship prompt
 eval "$(starship init zsh)"
 
+tmux -u new -A -s main > /dev/null 2>&1
+
 ## Setup completions
-# inspired by https://gist.github.com/ctechols/ca1035271ad134841284
 
 autoload -Uz compinit
 zmodload zsh/complist
@@ -20,5 +20,4 @@ fi;
 autoload -Uz url-quote-magic
 autoload -Uz bracketed-paste-magic
 
-source "${ZDOTDIR:-$HOME/.config/zsh}/programs.zsh"
 source "${ZDOTDIR:-$HOME/.config/zsh}/loader.zsh"

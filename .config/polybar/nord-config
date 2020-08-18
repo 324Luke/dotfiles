@@ -23,9 +23,7 @@ wm-restack = bspwm
 # battery: Battery info
 # keyboard: CapsLock indicator
 # mpd: mpd status and controls
-# i3: i3 workspace icons
 # bspwm: bspwm workspace icons
-# workspace-name: i3 current workspace name, need to be in the format like "1:Home"
 # title: title of the active window
 # network-detail: Download and upload speed 
 # weather: Display openweather info
@@ -41,14 +39,9 @@ wm-restack = bspwm
 # clipmenu-widget: showing clipmenu service
 
 # Top modules
-top-left = bspwm title
+top-left = bspwm rtitle
 top-center = 
 top-right = keyboard alsa network-short battery date
-
-# Bottom modules
-bottom-left = 
-bottom-center = 
-bottom-right =
 
 systray-top = none
 systray-bottom = right
@@ -62,14 +55,6 @@ line-size = 6
 # it from here.
 # network interface, check by `ip link show`
 interface = enp30s0
-
-# when the current battery capacity excess this value,
-# the full-capacity format will be displayed.
-battery-full-at = 95
-
-# battery and adapter
-battery-bat = BAT0
-battery-adp = AC
 
 # soundcard setting
 master-soundcard = default
@@ -96,12 +81,3 @@ notify-click-left = xdotool key control+grave
 
 # network module setting
 network-click-left = i3-msg workspace 2
-
-# i3
-# Only show workspaces defined on the same output as the bar
-#
-# Useful if you want to show monitor specific workspaces
-# on different bars
-#
-# Default: false
-i3-pin-workspaces = false

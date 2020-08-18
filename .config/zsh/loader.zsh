@@ -14,11 +14,6 @@ fpath=(${ZDOTDIR:-$HOME/.config/zsh}/plugins/zsh-completions/src $fpath)
 
 eval "$(rbenv init -)"
 
-## Pyenv
-
-# eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
-
 ## Other
 
 source "${ZDOTDIR:-$HOME/.config/zsh}/keybinds.zsh"

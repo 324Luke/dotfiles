@@ -1,22 +1,23 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Path Setup
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.deno/bin:$PATH"
 export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/.emacs.d/bin:$PATH"
+export PATH="$PATH:`yarn global bin`"
+export PATH="$HOME/.esvu/bin:$PATH"
 
 # Polybar
 export MONITOR=DisplayPort-2
 
-# Node Setup
+# NodeJS Setup
 export N_PREFIX="$HOME/.n"
 [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin" 
 
-export PATH="$PATH:`yarn global bin`"
-export PATH="$HOME/.esvu/bin:$PATH"
-
-# Golang Path Setup
+# Golang Setup
+export GO11MODUL="on"
 export GOPATH="$HOME/code/go"
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export PATH=$PATH:/home/luke/code/go/bin

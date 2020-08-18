@@ -31,7 +31,8 @@ alias \
 alias \
   mkdir="/usr/bin/mkdir -p" \
   mongod="mongod --dbpath=\"/home/luke/.config/mongo/data/db\"" \
-  lunar="lunar --config ~/.config/lunar.yaml"
+  lunar="lunar --config ~/.config/lunar.yaml" \
+  subl3="LANG=en_US.UTF-8 LC_CTYPE=en_US.UTF-8 subl3"
 
 # git
 alias \

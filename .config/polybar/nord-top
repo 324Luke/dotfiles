@@ -1,51 +1,4 @@
 ; vim:ft=dosini
-[module/i3]
-type = internal/i3
-
-pin-workspaces = ${config.i3-pin-workspaces}
-
-strip-wsnumbers = true
-
-index-sort = true
-enable-click = true
-enable-scroll = true
-wrapping-scroll = true
-reverse-scroll = true
-
-fuzzy-match = false
-
-; Available tags:
-;   <label-state> (default) - gets replaced with <label-(focused|unfocused|visible|urgent)>
-;   <label-mode> (default)
-format = <label-state> <label-mode>
-
-; icons
-ws-icon-0 = 1:Home;
-ws-icon-1 = 2:Browser;
-ws-icon-2 = 3:Coding;
-ws-icon-3 = 4:Learning;
-ws-icon-4 = 5:Fun;
-ws-icon-5 = 25:Desktop;
-ws-icon-default = 
-
-; color
-label-focused = 
-label-focused-underline = ${colors.nord7}
-label-focused-foreground = ${colors.nord7}
-label-focused-padding = 2
-
-label-unfocused = •
-label-unfocused-foreground = ${colors.nord9}
-label-unfocused-padding = 2
-
-label-urgent = 
-label-urgent-foreground = ${colors.urgent}
-label-urgent-background = ${colors.foreground}
-label-urgent-padding = 2
-
-; seperator
-label-separator = |
-label-separator-foreground = ${colors.buffer}
 
 [module/bspwm]
 type = internal/bspwm
@@ -301,14 +254,6 @@ exec = ~/.config/polybar/scripts/clash.sh
 interval = 0
 
 click-left = ~/.config/polybar/scripts/clash.sh toggle
-
-[module/onedrive-widget]
-type = custom/script
-
-exec = ~/.config/polybar/scripts/onedrive.sh
-interval = 0
-
-click-left = ~/.config/polybar/scripts/onedrive.sh toggle
 
 [module/clipmenu-widget]
 type = custom/script
