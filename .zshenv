@@ -1,6 +1,4 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path Setup
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.deno/bin:$PATH"
@@ -16,8 +14,7 @@ export MONITOR=DisplayPort-2
 export N_PREFIX="$HOME/.n"
 [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin" 
 
-# Golang Setup
-export GO11MODUL="on"
+export GO11MODULE="on"
 export GOPATH="$HOME/code/go"
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export PATH=$PATH:/home/luke/code/go/bin
