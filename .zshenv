@@ -6,6 +6,7 @@ export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/.emacs.d/bin:$PATH"
 export PATH="$PATH:`yarn global bin`"
 export PATH="$HOME/.esvu/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Polybar
 export MONITOR=DisplayPort-2
