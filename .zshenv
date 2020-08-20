@@ -9,7 +9,7 @@ export PATH="$HOME/.esvu/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
 # Polybar
-export MONITOR=DisplayPort-2
+export MONITOR="DisplayPort-2"
 
 # NodeJS Setup
 export N_PREFIX="$HOME/.n"

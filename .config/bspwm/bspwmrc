@@ -2,7 +2,7 @@
 
 # Start some essential programs
 
-sxhkd &
+sxhkd & 
 picom &
 start-pulse-audiox11 &
 
