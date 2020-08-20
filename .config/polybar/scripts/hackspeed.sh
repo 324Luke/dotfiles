@@ -1,12 +1,12 @@
 #!/bin/sh
 # shellcheck disable=SC2016,SC2059
 
-KEYBOARD_ID="AT Translated Set 2 keyboard"
+KEYBOARD_ID=10
 
 # cpm: characters per minute
 # wpm: words per minute (1 word = 5 characters)
-METRIC=cpm
-FORMAT=" %d $METRIC"
+METRIC=wpm
+FORMAT=" %d $METRIC  "
 
 INTERVAL=20
 
@@ -39,7 +39,7 @@ trap 'rm "$hackspeed_cache"' EXIT
 
 # Write a dot to our cache for each key press
 printf '' > "$hackspeed_cache"
-xinput test "$KEYBOARD_ID" | \
+xinput --test $KEYBOARD_ID | \
 	stdbuf -o0 awk '$1 == "key" && $2 == "press" && ('"$CONDITION"') {printf "."}' >> "$hackspeed_cache" &
 
 while true; do
