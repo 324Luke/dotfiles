@@ -3,7 +3,7 @@
 Welcome to my `$HOME`, please come in.
 
 * You'll find the license these files are under (The GPL-3.0) in the `.github/` directory.
-* Configurations for: Alacritty, Tmux, BSPWM, SXHKD, GTK, Kvantum, ZSH, Git, Starship, Spotify (Spicetify), X11, KDE
+* Configurations for: Alacritty, Tmux, BSPWM, Polybar, SXHKD, GTK, Kvantum, ZSH, Git, Starship, Spotify (Spicetify), X11, and more
 
 ```sh
 ~
