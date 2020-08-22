@@ -8,15 +8,15 @@
 	notification_height = 0
 	separator_height = 5
 	padding = 10
-	horizontal_padding = 8
+	horizontal_padding = 10
 	separator_color = auto
 	sort = yes
 	idle_threshold = 120
 
 	### Text ###
 
-	font = Source Code Pro Semibold 16
-	line_height = 0
+	font = Fantasque Sans Mono 16
+	line_height = 3
 	markup = full
 
 	# The format of the message.  Possible variables are:
@@ -29,7 +29,7 @@
 	#   %n  progress value if set without any extra characters
 	#   %%  Literal %
 	# Markup is allowed
-	format = "<b>%s</b>\n%b"
+	format = "%a: <b>%s</b>\n%b"
 
 	alignment = right
 	vertical_alignment = center
@@ -48,7 +48,7 @@
 
 	### Misc/Advanced ###
 
-	dmenu = /usr/bin/local/dmenu -p dunst:
+	dmenu = /usr/local/bin/dmenu -p dunst:
 	browser = /usr/bin/brave -new-tab
 	always_run_script = true
 	title = Dunst
@@ -99,19 +99,18 @@
 	context = ctrl+shift+period
 
 [urgency_low]
-	background = "#2434C5E"
-	foreground = "#E5E9F0"
-	timeout = 10
+	background = "#81a1c1"
+	foreground = "#d8dee9"
+	timeout = 8
 
 [urgency_normal]
-	background = "#5E81AC"
-	foreground = "#E5E9F0"
-	timeout = 10
+	background = "#434c5e"
+	foreground = "#d8dee9"
+	timeout = 20
 
 [urgency_critical]
 	background = "#BF616A"
-	foreground = "#E5E9F0"
-	frame_color = "#D08770"
+	foreground = "#d8dee9"
 	timeout = 0
 
 # vim: ft=cfg

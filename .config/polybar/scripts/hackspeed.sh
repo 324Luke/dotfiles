@@ -2,25 +2,16 @@
 # shellcheck disable=SC2016,SC2059
 
 KEYBOARD_ID=10
-
-# cpm: characters per minute
-# wpm: words per minute (1 word = 5 characters)
 METRIC=wpm
-FORMAT=" %d $METRIC  "
-
+FORMAT=" %d $METRIC"
 INTERVAL=20
-
-# If you have a keyboard layout that is not listed here yet, create a condition
-# yourself. $3 is the key index. Use `xinput test "AT Translated Set 2 keyboard"`
-# to see key codes in real time.  Be sure to open a pull request for your
-# layout's condition!
 LAYOUT=qwerty
 
 case "$LAYOUT" in
-	qwerty) CONDITION='($3 >= 10 && $3 <= 19) || ($3 >= 24 && $3 <= 33) || ($3 >= 37 && $3 <= 53) || ($3 >= 52 && $3 <= 58)'; ;;
-	azerty) CONDITION='($3 >= 10 && $3 <= 19) || ($3 >= 24 && $3 <= 33) || ($3 >= 37 && $3 <= 54) || ($3 >= 52 && $3 <= 57)'; ;;
-	qwertz) CONDITION='($3 >= 10 && $3 <= 20) || ($3 >= 24 && $3 <= 34) || ($3 == 36) || ($3 >= 38 && $3 <= 48) || ($3 >= 52 && $3 <= 58)'; ;;
-        dontcare) CONDITION='1'; ;; # Just register all key presses, not only letters and numbers
+	qwerty)   CONDITION='($3 >= 10 && $3 <= 19) || ($3 >= 24 && $3 <= 33) || ($3 >= 37 && $3 <= 53) || ($3 >= 52 && $3 <= 58)'; ;;
+	azerty)   CONDITION='($3 >= 10 && $3 <= 19) || ($3 >= 24 && $3 <= 33) || ($3 >= 37 && $3 <= 54) || ($3 >= 52 && $3 <= 57)'; ;;
+	qwertz)   CONDITION='($3 >= 10 && $3 <= 20) || ($3 >= 24 && $3 <= 34) || ($3 == 36) || ($3 >= 38 && $3 <= 48) || ($3 >= 52 && $3 <= 58)'; ;;
+	dontcare) CONDITION='1'; ;; # Just register all key presses, not only letters and numbers
 	*) echo "Unsupported layout \"$LAYOUT\""; exit 1; ;;
 esac
 
