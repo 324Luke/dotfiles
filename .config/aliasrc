@@ -13,7 +13,7 @@ alias \
 
 # Make commands faster and more modern
 alias \
-	cat="<" \
+	cat="bat" \
 	du="dust" \
 	grep="rg" \
 	ps="procs"
