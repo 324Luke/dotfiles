@@ -1,24 +1,27 @@
 #!/bin/sh
 
-# Start some essential programs
+### Autostart programs ###
 
-sxhkd & 
+sxhkd &
+imwheel --kill --buttons "45" 
 picom &
 start-pulse-audiox11 &
-
-imwheel --kill --buttons "45"
 feh --bg-fill ~/pics/Wallpapers/wallpaper.jpg
-/home/luke/.config/polybar/launch.sh
+exec /home/luke/.config/polybar/launch.sh
 
-# BSPWM configuration
+### Setup Workspaces ###
 
 bspc monitor -d I II III IV V VI VII VIII IX X
+
+### Configure BSPWM ###
 
 bspc config border_width         0
 bspc config window_gap           30
 bspc config split_ratio          0.50
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
+
+### Set BSPWM rules ###
 
 bspc rule -a Gimp                desktop='^8' state=floating follow=on
 bspc rule -a mplayer2            state=floating
