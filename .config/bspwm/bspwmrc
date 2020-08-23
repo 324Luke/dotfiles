@@ -3,11 +3,11 @@
 ### Autostart programs ###
 
 sxhkd &
-imwheel --kill --buttons "45" 
+imwheel --kill --buttons "45"
 picom &
 start-pulse-audiox11 &
 feh --bg-fill ~/pics/Wallpapers/wallpaper.jpg
-exec /home/luke/.config/polybar/launch.sh
+/home/luke/.config/polybar/launch.sh
 
 ### Setup Workspaces ###
 

@@ -15,8 +15,7 @@ alias \
 alias \
 	cat="bat" \
 	du="dust" \
-	grep="rg" \
-	ps="procs"
+	grep="rg"
 
 # Files
 alias \

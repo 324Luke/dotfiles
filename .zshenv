@@ -4,7 +4,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.deno/bin:$PATH"
 export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/.emacs.d/bin:$PATH"
-export PATH="$PATH:`yarn global bin`"
+export PATH="$PATH:`yarn global bin`:$PATH"
 export PATH="$HOME/.esvu/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
