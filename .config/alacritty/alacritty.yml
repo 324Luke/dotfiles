@@ -34,10 +34,10 @@ font:
   # Normal (roman) font face
   normal:
     # Font family
-    family: Source Code Pro
+    family: Code New Roman
 
     # The `style` can be specified to pick a specific face.
-    style: Semibold
+    style: Normal
 
   # Bold font face
   bold:
@@ -45,7 +45,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Source Code Pro
+    family: Code New Roman
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -56,10 +56,10 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Source Code Pro
+    family: Code New Roman
 
     # The `style` can be specified to pick a specific face.
-    style: Semibold Italic
+    style: Italic
 
   # Bold italic font face
   bold_italic:
@@ -67,13 +67,13 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Source Code Pro
+    family: Code New Roman
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
 
   # Point size
-  size: 9
+  size: 11
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true

@@ -39,7 +39,7 @@ style = "bold fg:#94bdff"
 # avit prompt icons:
 # dirty    = " ✗"
 # clean    = " ✔"
-# added    = "✚ "
+staged = " ✚ "
 # unmerged = "§ "
 prefix = ""
 suffix = " "
