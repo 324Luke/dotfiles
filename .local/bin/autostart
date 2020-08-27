@@ -1,7 +1,7 @@
 #!/bin/sh
 
-imwheel --kill --buttons "45"
-picom &
-start-pulse-audiox11 &
-feh --bg-fill ~/pics/Wallpapers/wallpaper.jpg
-/home/luke/.config/polybar/launch.sh
+imwheel --kill --buttons "45" # X scroll wheel configuration
+picom & # Compositor
+start-pulse-audiox11 & # Pulse Audio
+feh --bg-fill ~/pics/Wallpapers/wallpaper.jpg # Set desktop background
+/home/luke/.config/polybar/launch.sh # Start polybar

@@ -1,0 +1,23 @@
+configuration {
+	modi: "window,drun,ssh,run";
+	font: "Fantasque Sans Mono 14";
+	show-icons: true;
+	icon-theme: "Papirus";
+	display-drun: "launch :";
+	drun-display-format: "{name}";
+	hide-scrollbar: true;
+	terminal: "alacritty";
+	width: 30;
+	lines: 10;
+	columns: 1;
+	bw: 0;
+	location: 0;
+	padding: 20;
+	yoffset: 27;
+	xoffset: 60;
+	line-margin: 1;
+	color-normal: "#434C5E, #a9abb0, #434C5E, #5e81ac, #d8dee9";
+	color-urgent: "#3B4252, #ebcb8b, #434C5E, #5e81ac, #d8dee9";
+	color-active: "#3B4252, #8fbcbb, #434C5E, #5e81ac, #d8dee9";
+	color-window: "#3B4252, #3B4252, #3B4252";
+}
