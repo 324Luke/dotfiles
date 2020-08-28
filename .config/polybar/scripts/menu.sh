@@ -1,1 +1,1 @@
-dmenu_run
+rofi -show drun

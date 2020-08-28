@@ -21,3 +21,4 @@ autoload -Uz url-quote-magic
 autoload -Uz bracketed-paste-magic
 
 source "${ZDOTDIR:-$HOME/.config/zsh}/loader.zsh"
+source "${HOME}/.zshenv"
