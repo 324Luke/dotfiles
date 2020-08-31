@@ -1,7 +1,8 @@
 #!/bin/sh
 
-imwheel --kill --buttons "45" # X scroll wheel configuration
+imwheel --kill --buttons "45" # Make scroll wheel faster
 picom & # Compositor
 start-pulse-audiox11 & # Pulse Audio
 feh --bg-fill ~/pics/Wallpapers/wallpaper.jpg # Set desktop background
 /home/luke/.config/polybar/launch.sh # Start polybar
+solaar -w hide config 1 dpi 1500 # Set DPI on my logitech mouse
