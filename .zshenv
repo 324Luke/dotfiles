@@ -5,14 +5,14 @@ export \
   GPG_TTY="$(tty)"
 
 # Path
-export \
-  PATH="$HOME/bin:/usr/local/bin:$PATH" \
-  PATH="$PATH:$HOME/.cargo/bin" \
-  PATH="$PATH:$HOME/.rbenv/bin" \
-  PATH="$PATH:$HOME/.deno/bin" \
-  PATH="$PATH:$HOME/.yarn/bin:$PATH" \
-  PATH="$PATH:$HOME/.local/bin" \
-  PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
+
+PATH+=":$HOME/bin:/usr/local/bin"
+PATH+=":$HOME/.cargo/bin"
+PATH+=":$HOME/.rbenv/bin"
+PATH+=":$HOME/.deno/bin"
+PATH+=":$HOME/.yarn/bin"
+PATH+=":$HOME/.local/bin"
+PATH+=":$GOROOT/bin:$GOPATH/bin"
 
 # Language Setup
 export N_PREFIX="$HOME/.n"
