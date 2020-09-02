@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 if [ "$(playerctl --player=playerctld status)" = "Stopped" ]; then
     echo "No music is playing"
