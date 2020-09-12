@@ -27,7 +27,7 @@ prompt_order = [
 
 [character]
 symbol = "▶"
-style_success = "white"
+style_success = "bold white"
 
 [directory]
 disabled = false
@@ -39,14 +39,14 @@ style = "bold fg:#94bdff"
 # avit prompt icons:
 # dirty    = " ✗"
 # clean    = " ✔"
-staged = " ✚ "
+staged = "✚ "
 # unmerged = "§ "
 prefix = ""
 suffix = " "
-modified = "⚑"
-untracked = " ◒"
+modified = "⚑ "
+untracked = "◒"
 deleted = "✖ "
-renamed = "▴ "
+renamed = "▴"
 style = "bold fg:#94bdff"
 
 [git_branch]
