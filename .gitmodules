@@ -19,3 +19,6 @@
 [submodule "/home/luke/.emacs.d"]
 	path = /home/luke/.emacs.d
 	url = https://github.com/hlissner/doom-emacs
+[submodule ".tmux/themes/nord-tmux"]
+	path = .tmux/themes/nord-tmux
+	url = git@github.com:arcticicestudio/nord-tmux
