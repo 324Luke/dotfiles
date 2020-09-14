@@ -1,8 +1,25 @@
 #!/bin/sh
 
-# Because Git submodule commands cannot operate without a work tree, they must
-# be run from within $HOME (assuming this is the root of your dotfiles)
-cd "$HOME"
+# ====================
+#   Bootstrap Script  
+# ====================
 
-echo "Init submodules"
-yadm submodule update --recursive --init
+if [ ${EUID:-$(id -u)} -eq 0 ]; then # Ensure the script runs as the root user
+	# Because Git submodule commands cannot operate without a work tree, they must
+	# be run from within $HOME (assuming this is the root of your dotfiles)
+	cd "$HOME" || exit
+
+	echo "-> Initializing submodules"
+	yadm submodule update --recursive --init
+
+	echo "-> Running pre-bootstrap routines"
+
+	if ! command -v yay > /dev/null 2>&1; then
+		echo "COMMAND could not be found"
+		exit
+	fi
+
+	echo "-> Installing programs"
+	echo "=> This script does not yet install programs"
+	exit
+fi
