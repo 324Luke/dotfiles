@@ -7,7 +7,7 @@ configuration {
 	drun-display-format: "{name}";
 	hide-scrollbar: true;
 	terminal: "alacritty";
-	width: 30;
+	width: 45;
 	lines: 10;
 	columns: 2;
 	bw: 0;
@@ -21,3 +21,4 @@ configuration {
 	color-active: "#3B4252, #8fbcbb, #434C5E, #5e81ac, #d8dee9";
 	color-window: "#3B4252, #3B4252, #3B4252";
 }
+
