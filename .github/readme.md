@@ -17,7 +17,6 @@ Welcome to my `$HOME`, please come in.
   * spotify (spicetify) — music player
   * deadbeef — local music player
   * etc.
-* 
 
 ## Installation
 
