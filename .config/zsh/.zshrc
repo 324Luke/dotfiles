@@ -4,8 +4,6 @@
 
 eval "$(starship init zsh)"
 
-tmux -u new -A -s main > /dev/null 2>&1
-
 autoload -Uz url-quote-magic
 autoload -Uz bracketed-paste-magic
 autoload -Uz compinit

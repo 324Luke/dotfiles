@@ -28,7 +28,7 @@ export \
   TERM="alacritty" \
   EDITOR="code" \
   PAGER="less" \
-  BROWSER="brave"
+  BROWSER="firefox"
 
 # Program Configuation
 export \
