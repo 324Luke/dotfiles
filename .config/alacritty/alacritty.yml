@@ -25,7 +25,7 @@ window:
     general: Alacritty
 
 scrolling:
-  # Maximum number of lines in the scrollback buffer.
+  # Maximum number of lines in the scroll-back buffer.
   # Specifying '0' will disable scrolling.
   history: 10000
 
@@ -34,7 +34,7 @@ font:
   # Normal (roman) font face
   normal:
     # Font family
-    family: Fantasque Sans Mono Nerd Font
+    family: Source Code Pro
 
     # The `style` can be specified to pick a specific face.
     style: Normal
@@ -45,7 +45,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Fantasque Sans Mono Nerd Font
+    family: Source Code Pro
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -56,7 +56,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Fantasque Sans Mono Nerd Font
+    family: Source Code Pro
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -67,7 +67,7 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Fantasque Sans Mono Nerd Font
+    family: Source Code Pro
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
@@ -80,35 +80,32 @@ draw_bold_text_with_bright_colors: true
 
 colors:
   primary:
-    background: '0x2E3440'
-    foreground: '0xD8DEE9'
-  cursor:
-    text: '0x2E3440'
-    cursor: '0xD8DEE9'
+    background: '0x000000'
+    foreground: '0xd0d0d0'
   normal:
-    black: '0x3B4252'
-    red: '0xBF616A'
-    green: '0xA3BE8C'
-    yellow: '0xEBCB8B'
-    blue: '0x81A1C1'
-    magenta: '0xB48EAD'
-    cyan: '0x88C0D0'
-    white: '0xE5E9F0'
+    black:   '0x000000'
+    red:     '0xc51e14'
+    green:   '0x1dc121'
+    yellow:  '0xc7c329'
+    blue:    '0x0a2fc4'
+    magenta: '0xc839c5'
+    cyan:    '0x20c5c6'
+    white:   '0xc7c7c7'
   bright:
-    black: '0x4C566A'
-    red: '0xBF616A'
-    green: '0xA3BE8C'
-    yellow: '0xEBCB8B'
-    blue: '0x81A1C1'
-    magenta: '0xB48EAD'
-    cyan: '0x8FBCBB'
-    white: '0xECEFF4'
+    black:   '0x686868'
+    red:     '0xfd6f6b'
+    green:   '0x67f86f'
+    yellow:  '0xfffa72'
+    blue:    '0x6a76fb'
+    magenta: '0xfd7cfc'
+    cyan:    '0x68fdfe'
+    white:   '0xffffff'
 
 # Background opacity
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.85
+background_opacity: 1.0
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"

@@ -1,97 +1,77 @@
 # Port of Oh My Zsh theme "avit" to Starship.
 # ======
 # 
-# Supports: Java, Node.JS, PHP, Python, Ruby, and Rust modules
+# Supports: Java, Node.JS, PHP, Go, Crystal, Python, Ruby, and Rust modules
 # Other modules include: Directory, Git Branch/Commit/State/Status, and Docker
 
 add_newline = false
-prompt_order = [
-  "directory",
-  "git_branch",
-  "git_commit",
-  "git_state",
-  "git_status",
-  "docker_context",
-  "crystal",
-  "golang",
-  "haskell",
-  "java",
-  "nodejs",
-  "php",
-  "python",
-  "ruby",
-  "rust",
-  "line_break",
-  "character"
-]
+format = """\
+  $directory\
+  $git_branch\
+  $git_commit\
+  $git_state\
+  $git_status\
+  $docker_context\
+  $crystal\
+  $golang\
+  $java\
+  $nodejs\
+  $php\
+  $python\
+  $ruby\
+  $rust\
+  $line_break\
+  $character
+"""
 
 [character]
-symbol = "▶"
-style_success = "bold white"
+success_symbol = "[▶]($bold white)"
+error_symbol = "[▶](bold red)"
 
 [directory]
 disabled = false
-prefix = ""
+format = "[$path](bold fg:#94bdff) "
 truncate_to_repo = false
-style = "bold fg:#94bdff"
 
 [git_status]
-# avit prompt icons:
-# dirty    = " ✗"
-# clean    = " ✔"
+format = "([$all_status$ahead_behind](bold fg:#94bdff) )"
+all_status = "$conflicted $stashed $deleted $renamed $modified $staged $untracked"
 staged = "✚ "
-# unmerged = "§ "
-prefix = ""
-suffix = " "
 modified = "⚑ "
-untracked = "◒"
+untracked = "◒ "
 deleted = "✖ "
-renamed = "▴"
-style = "bold fg:#94bdff"
+renamed = "▴ "
 
 [git_branch]
-style = "bold green"
-prefix = ""
+format = "on [ $branch](bold green) "
 
 # Language Support
 [docker_context]
-symbol = " "
+format = "via [ $context](bold cyan) "
 disabled = false
-style = "bold cyan"
 
 [crystal]
-style = "bold blue"
+format = "via [🔮 $version](bold blue) "
 
 [golang]
-symbol = " "
-style = "bold cyan"
-
-[haskell]
-symbol = " "
-style = "bold purple"
-disabled = false
+format = "via [ $version](bold cyan) "
 
 [java]
-symbol = " "
-style = "bold yellow"
+format = "via [ $version](bold yellow) "
 
 [nodejs]
-symbol = " "
-style = "bold green"
+format = "via [ $version](bold green) "
 
 [php]
-symbol = " "
-style = "bold cyan"
-disabled = false
+format = "via [ $version](bold cyan) "
 
 [python]
-symbol = " "
-style = "bold blue"
+format = "via [ $version](bold blue) "
 
 [ruby]
-symbol = " "
-style = "bold red"
+format = "via [ $version](bold red) "
 
 [rust]
-symbol = " "
-style = "bold red"
+format = "via [ $version](bold red) "
+
+# Broken: Docker

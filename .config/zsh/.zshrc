@@ -13,6 +13,7 @@ autoload -Uz add-zsh-hook
 ##       Setup completions      
 ## =============================
 
+fpath=(~/.comp $fpath)
 zmodload zsh/complist
 
 if [[ -n ${ZDOTDIR}/.zcompdump(\#qN.mh+24) ]]; then

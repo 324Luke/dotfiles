@@ -1,25 +1,43 @@
 #!/bin/sh
 
-# ====================
-#   Bootstrap Script  
-# ====================
+# ======================
+#    Bootstrap Script
+#
+# @author Luke Whrit
+# ======================
 
 if [ ${EUID:-$(id -u)} -eq 0 ]; then # Ensure the script runs as the root user
 	# Because Git submodule commands cannot operate without a work tree, they must
 	# be run from within $HOME (assuming this is the root of your dotfiles)
 	cd "$HOME" || exit
 
-	echo "-> Initializing submodules"
+	echo "~> Initializing submodules"
 	yadm submodule update --recursive --init
 
-	echo "-> Running pre-bootstrap routines"
+	echo "~> Running pre-bootstrap routines"
 
-	if ! command -v yay > /dev/null 2>&1; then
-		echo "COMMAND could not be found"
-		exit
+	# Make sure commands we need are installed
+
+	if ! command -v pacman > /dev/null 2>&1; then
+		echo "~> Command 'pacman' could not be found"
+		exit 1
 	fi
 
-	echo "-> Installing programs"
-	echo "=> This script does not yet install programs"
-	exit
+	if ! command -v git > /dev/null 2>&1; then
+		echo "~> Command 'git' could not be found"
+		exit 1
+	fi
+
+	if ! command -v dialog > /dev/null 2>&1; then
+		echo "~> Command 'dialog' could not be found"
+		exit 1
+	else
+		pacman -S dialog
+	fi
+
+	GIT_USERNAME=$(dialog --input)
+
+	echo "~> Installing programs"
+	echo "~> This script does not yet install programs"
+	exit 0
 fi
