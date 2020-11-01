@@ -7,7 +7,7 @@ configuration {
 	drun-display-format: "{name}";
 	hide-scrollbar: true;
 	terminal: "alacritty";
-	width: 32;
+	width: 45;
 	lines: 10;
 	columns: 2;
 	bw: 0;
