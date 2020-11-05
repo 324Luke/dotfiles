@@ -2,7 +2,7 @@
 # ======
 # 
 # Supports: Java, Node.JS, PHP, Go, Crystal, Python, Ruby, and Rust modules
-# Other modules include: Directory, Git Branch/Commit/State/Status, and Docker
+# Other modules include: Directory, and Git Branch/Commit/State/Status
 
 add_newline = false
 format = """\
@@ -11,7 +11,6 @@ format = """\
   $git_commit\
   $git_state\
   $git_status\
-  $docker_context\
   $crystal\
   $golang\
   $java\
@@ -20,58 +19,50 @@ format = """\
   $python\
   $ruby\
   $rust\
-  $line_break\
   $character
 """
 
 [character]
-success_symbol = "[▶]($bold white)"
-error_symbol = "[▶](bold red)"
+success_symbol = "[➜]($bold white)"
+error_symbol = "[➜]($bold red)"
 
 [directory]
 disabled = false
-format = "[$path](bold fg:#94bdff) "
+format = "[$path](bold fg:#94bdff)"
 truncate_to_repo = false
 
 [git_status]
-format = "([$all_status$ahead_behind](bold fg:#94bdff) )"
-all_status = "$conflicted $stashed $deleted $renamed $modified $staged $untracked"
-staged = "✚ "
-modified = "⚑ "
-untracked = "◒ "
-deleted = "✖ "
-renamed = "▴ "
+format = " ([$all_status$ahead_behind](bold fg:#94bdff) )"
+all_status = "$conflicted $stashed $deleted $modified $staged $untracked"
+staged = "•"
+modified = "~"
+untracked = "+"
+deleted = "x"
 
 [git_branch]
-format = "on [ $branch](bold green) "
+format = " [ $branch](bold green)"
 
 # Language Support
-[docker_context]
-format = "via [ $context](bold cyan) "
-disabled = false
-
 [crystal]
-format = "via [🔮 $version](bold blue) "
+format = "🔮 "
 
 [golang]
-format = "via [ $version](bold cyan) "
+format = "🐭 "
 
 [java]
-format = "via [ $version](bold yellow) "
+format = "🍵 "
 
 [nodejs]
-format = "via [ $version](bold green) "
+format = "🍏 "
 
 [php]
-format = "via [ $version](bold cyan) "
+format = "🐘 "
 
 [python]
-format = "via [ $version](bold blue) "
+format = "🐍 "
 
 [ruby]
-format = "via [ $version](bold red) "
+format = "💎 "
 
 [rust]
-format = "via [ $version](bold red) "
-
-# Broken: Docker
+format = "🦀 "

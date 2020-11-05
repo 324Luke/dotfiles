@@ -2,6 +2,7 @@
 
 imwheel --kill --buttons "45" # Make scroll wheel faster
 picom & # Compositor
+redshift & # Red Shift
 start-pulse-audiox11 & # Pulse Audio
 feh --bg-fill ~/pics/Wallpapers/wallpaper.jpg # Set desktop background
 /home/luke/.config/polybar/launch.sh # Start polybar

@@ -7,8 +7,8 @@
 # ======================
 
 if [ ${EUID:-$(id -u)} -eq 0 ]; then # Ensure the script runs as the root user
-	# Because Git submodule commands cannot operate without a work tree, they must
-	# be run from within $HOME (assuming this is the root of your dotfiles)
+	# Because Git submodule commands cannot operate without a work tree, they
+	# must be run from within $HOME (assuming this is the root of your dotfiles)
 	cd "$HOME" || exit
 
 	echo "~> Initializing submodules"
@@ -23,19 +23,24 @@ if [ ${EUID:-$(id -u)} -eq 0 ]; then # Ensure the script runs as the root user
 		exit 1
 	fi
 
-	if ! command -v git > /dev/null 2>&1; then
-		echo "~> Command 'git' could not be found"
-		exit 1
-	fi
+	# Git configuration
+	echo -n "What's your Git username: "
+	read GIT_USERNAME
 
-	if ! command -v dialog > /dev/null 2>&1; then
-		echo "~> Command 'dialog' could not be found"
-		exit 1
-	else
-		pacman -S dialog
-	fi
+	echo -n "What's your Git email: "
+	read GIT_EMAIL
 
-	GIT_USERNAME=$(dialog --input)
+	git config user.name $GIT_USERNAME
+	git config user.email $GIT_EMAIL
+
+	if ! command -v yay > /dev/null 2>&1; then
+		cd /tmp/
+		pacman -S --needed git base-devel
+		cd /tmp/
+		git clone "https://aur.archlinux.org/yay.git"
+		cd yay
+		makepkg -si
+	fi
 
 	echo "~> Installing programs"
 	echo "~> This script does not yet install programs"
