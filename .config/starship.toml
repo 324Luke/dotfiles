@@ -7,19 +7,9 @@
 add_newline = false
 format = """\
   $directory\
-  $git_branch\
-  $git_commit\
-  $git_state\
-  $git_status\
-  $crystal\
-  $golang\
-  $java\
-  $nodejs\
-  $php\
-  $python\
-  $ruby\
-  $rust\
-  $character
+  $git_branch$git_commit$git_state$git_status\
+  $crystal$golang$java$nodejs$php$python$ruby$rust\
+  $character\
 """
 
 [character]
@@ -32,7 +22,7 @@ format = "[$path](bold fg:#94bdff)"
 truncate_to_repo = false
 
 [git_status]
-format = " ([$all_status$ahead_behind](bold fg:#94bdff) )"
+format = " ([$all_status$ahead_behind](bold fg:#94bdff))"
 all_status = "$conflicted $stashed $deleted $modified $staged $untracked"
 staged = "•"
 modified = "~"
