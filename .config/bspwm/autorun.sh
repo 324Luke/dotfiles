@@ -30,3 +30,4 @@ run picom --shadow-exclude '!focused'
 run blueman-applet
 run msm_notifier
 run imwheel
+run redshift
