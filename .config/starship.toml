@@ -13,8 +13,8 @@ format = """\
 """
 
 [character]
-success_symbol = "[➜]($bold white)"
-error_symbol = "[➜]($bold red)"
+success_symbol = "[➜ ]($bold white)"
+error_symbol = "[➜ ]($bold red)"
 
 [directory]
 disabled = false
