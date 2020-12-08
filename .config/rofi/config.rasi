@@ -1,6 +1,6 @@
 configuration {
 	modi: "window,drun,ssh,run";
-	font: "Fantasque Sans Mono 14";
+	font: "JetBrains Mono 12";
 	show-icons: true;
 	icon-theme: "Papirus";
 	display-drun: "launch :";
@@ -16,9 +16,9 @@ configuration {
 	yoffset: 27;
 	xoffset: 60;
 	line-margin: 3;
-	color-normal: "#434C5E, #a9abb0, #434C5E, #5e81ac, #d8dee9";
-	color-urgent: "#3B4252, #ebcb8b, #434C5E, #5e81ac, #d8dee9";
-	color-active: "#3B4252, #8fbcbb, #434C5E, #5e81ac, #d8dee9";
-	color-window: "#3B4252, #3B4252, #3B4252";
+	color-normal: "#262626, #a9abb0, #262626, #cf73e6, #dedede";
+	color-urgent: "#121212, #f0d50c, #262626, #cf73e6, #dedede";
+	color-active: "#121212, #b7cbf4, #262626, #cf73e6, #dedede";
+	color-window: "#121212, #121212, #121212";
 }
 
