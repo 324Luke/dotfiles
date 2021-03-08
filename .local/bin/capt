@@ -1,11 +1,10 @@
 #!/bin/sh
 
 maim -s -u | {
-  owo -b -t image/png -n _.png - | xclip -i -selection clipboard
-  notify-send "Uploaded screenshot to OwO" -u low -t 800
+  owo -b -t image/png -n _.png - | xclip -i -selection clipboard && notify-send "Uploaded screenshot to OwO" -u low -t 800
   paplay /usr/share/sounds/freedesktop/stereo/complete.oga --volume 32000
 } || {
-  xclip -selection clipboard -t image/png
-  notify-send "Copied screenshot to clipboard" -u low -t 800
-  paplay /usr/share/sounds/freedesktop/stereo/complete.oga --volume 32000
+  xclip -selection clipboard -t image/png | \
+    notify-send "Copied screenshot to clipboard" -u low -t 800 && \
+    paplay /usr/share/sounds/freedesktop/stereo/complete.oga --volume 320000
 }
