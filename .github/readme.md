@@ -3,7 +3,7 @@
 Welcome to my `$HOME`, please come in. Dotfiles are your systems configuration files &mdash; these are mine. This repository holds most of the configuration files for my system.
 
 <img
-  src="./cover.jpg"
+  src="./cover.png"
   alt="Screenshot of a fully configured environment."
   style="border-radius: 5px;"
 />
