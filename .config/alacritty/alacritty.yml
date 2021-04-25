@@ -34,7 +34,7 @@ font:
   # Normal (roman) font face
   normal:
     # Font family
-    family: JetBrains Mono
+    family: Fantasque Sans Mono Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Normal
@@ -45,7 +45,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: JetBrains Mono
+    family: Fantasque Sans Mono Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -56,7 +56,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: JetBrains Mono
+    family: Fantasque Sans Mono Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -67,45 +67,76 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: JetBrains Mono
+    family: Fantasque Sans Mono Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
 
   # Point size
-  size: 11
+  size: 14.2
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
 colors:
   primary:
-    background: '0x000000'
-    foreground: '0xd0d0d0'
+    background: '0x282a36'
+    foreground: '0xf8f8f2'
+  cursor:
+    text: CellBackground
+    cursor: CellForeground
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
+  search:
+    matches:
+      foreground: '0x44475a'
+      background: '0x50fa7b'
+    focused_match:
+      foreground: '0x44475a'
+      background: '0xffb86c'
+    bar:
+      background: '0x282a36'
+      foreground: '0xf8f8f2'
+  line_indicator:
+    foreground: None
+    background: None
+  selection:
+    text: CellForeground
+    background: '0x44475a'
   normal:
     black:   '0x000000'
-    red:     '0xc51e14'
-    green:   '0x1dc121'
-    yellow:  '0xc7c329'
-    blue:    '0x0a2fc4'
-    magenta: '0xc839c5'
-    cyan:    '0x20c5c6'
-    white:   '0xc7c7c7'
+    red:     '0xff5555'
+    green:   '0x50fa7b'
+    yellow:  '0xf1fa8c'
+    blue:    '0xbd93f9'
+    magenta: '0xff79c6'
+    cyan:    '0x8be9fd'
+    white:   '0xbfbfbf'
   bright:
-    black:   '0x686868'
-    red:     '0xfd6f6b'
-    green:   '0x67f86f'
-    yellow:  '0xfffa72'
-    blue:    '0x6a76fb'
-    magenta: '0xfd7cfc'
-    cyan:    '0x68fdfe'
-    white:   '0xffffff'
+    black:   '0x4d4d4d'
+    red:     '0xff6e67'
+    green:   '0x5af78e'
+    yellow:  '0xf4f99d'
+    blue:    '0xcaa9fa'
+    magenta: '0xff92d0'
+    cyan:    '0x9aedfe'
+    white:   '0xe6e6e6'
+  dim:
+    black:   '0x14151b'
+    red:     '0xff2222'
+    green:   '0x1ef956'
+    yellow:  '0xebf85b'
+    blue:    '0x4d5b86'
+    magenta: '0xff46b0'
+    cyan:    '0x59dffc'
+    white:   '0xe6e6d1'
 
 # Background opacity
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.60
+background_opacity: 0.6
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
