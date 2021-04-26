@@ -13,16 +13,16 @@ format = """\
 """
 
 [character]
-success_symbol = "[▶]($bold fg:#d5c4a1)"
+success_symbol = "[▶]($bold fg:#f8f8f2)"
 error_symbol = "[▶]($bold fg:#fb4934)"
 
 [directory]
 disabled = false
-format = "[$path](bold fg:#83a598)"
+format = "[$path](bold fg:#ff79c6)"
 truncate_to_repo = false
 
 [git_status]
-format = " ([$all_status$ahead_behind](bold fg:#83a598))"
+format = " ([$all_status$ahead_behind](bold fg:#8be9fd))"
 all_status = "$conflicted $stashed $deleted $modified $staged $untracked"
 staged = "• "
 modified = "~ "
@@ -30,7 +30,7 @@ untracked = "+ "
 deleted = "x "
 
 [git_branch]
-format = " [ $branch](bold green)"
+format = " [ $branch](bold fg:#8be9fd)"
 
 # Language Support
 [crystal]
