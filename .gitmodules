@@ -1,9 +1,6 @@
 [submodule ".config/spicetify/Themes"]
 	path = .config/spicetify/Themes
 	url = git@github.com:lukewhrit/spicetify-themes.git
-[submodule ".tmux/plugins/nord-tmux"]
-	path = .tmux/plugins/nord-tmux
-	url = https://github.com/arcticicestudio/nord-tmux.git
 [submodule ".tmux/plugins/tmux-sensible"]
 	path = .tmux/plugins/tmux-sensible
 	url = https://github.com/tmux-plugins/tmux-sensible.git
@@ -16,9 +13,3 @@
 [submodule ".config/zsh/plugins/zsh-completions"]
 	path = .config/zsh/plugins/zsh-completions
 	url = git://github.com/zsh-users/zsh-completions.git
-[submodule "/home/luke/.emacs.d"]
-	path = /home/luke/.emacs.d
-	url = https://github.com/hlissner/doom-emacs
-[submodule ".tmux/themes/nord-tmux"]
-	path = .tmux/themes/nord-tmux
-	url = git@github.com:arcticicestudio/nord-tmux
