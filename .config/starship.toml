@@ -23,7 +23,6 @@ truncate_to_repo = false
 
 [git_status]
 format = " ([$all_status$ahead_behind](bold fg:#8be9fd))"
-all_status = "$conflicted $stashed $deleted $modified $staged $untracked"
 staged = "• "
 modified = "~ "
 untracked = "+ "
